@@ -1,0 +1,317 @@
+.home-prices-content
+	border-top: 1px solid #f0f0f0
+	border-bottom: 1px solid #f0f0f0
+	padding-bottom: 24px
+	position: relative
+	@media all and (max-width: 760px)
+		padding-bottom: 32px
+
+.home-prices-lists-top
+	padding-top: 61px
+	padding-bottom: 24px
+	position: relative
+	.grid-width
+		display: flex
+		justify-content: space-between
+	&:before
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 0
+		right: 0
+		height: 6px
+		background:
+			image: url("../img/svg/dots.svg")
+	&:after
+		content: ""
+		position: absolute
+		width: 6px
+		top: 35px
+		left: 50%
+		bottom: 35px
+		margin-left: -1px
+		background:
+			image: url("../img/svg/dots.svg")
+	@media all and (max-width: 1024px)
+		&:after
+			display: none
+		.grid-width
+			display: block
+	@media all and (max-width: 760px)
+		padding-top: 36px
+		padding-bottom: 34px
+
+.home-prices-lists-top-noline
+	&:after
+		display: none
+
+.home-prices-list
+	width: 50%
+	max-width: 432px
+	@media all and (max-width: 1024px)
+		width: 100%
+		max-width: none
+		margin-bottom: 40px
+	@media all and (max-width: 760px)
+		margin-bottom: 34px
+
+.home-prices-list-two
+	@media all and (max-width: 760px)
+		margin-bottom: 0
+
+.home-prices-list-four
+	@media all and (max-width: 760px)
+		margin-bottom: 0
+
+.home-prices-list-header
+	display: flex
+	align-items: center
+	position: relative
+	padding-right: 50px
+	margin-bottom: 16px
+	cursor: pointer
+	user-select: none
+	.info-icon
+		position: absolute
+		top: 9px
+		right: 0
+	&:hover
+		.info-icon
+			background-color: #a70c5d
+		.svg-info
+			fill: #fff
+		.icon-servise-1
+			stroke: #a70c5d
+		.icon-servise-2
+			fill: #a70c5d
+		.icon-servise-4
+			stroke: #a70c5d
+		.icon-servise-3-hover
+			display: block
+
+.home-prices-list-header-active
+	.info-icon
+		background-color: #a70c5d
+	.svg-info
+		fill: #fff
+	.icon-servise-1
+		stroke: #a70c5d
+	.icon-servise-2
+		fill: #a70c5d
+	.icon-servise-4
+		stroke: #a70c5d
+	.icon-servise-3-hover
+		display: block
+
+.icon-servise-1
+	stroke: #a5a6ac
+.icon-servise-2
+	fill: #a5a6ac
+.icon-servise-3-hover
+	display: none
+.icon-servise-4
+	stroke: #a5a6ac
+	fill: #fff
+
+.home-prices-list-title
+	color: #3f4147
+	font-size: 15px
+	font-weight: 700
+	line-height: 20px
+	text-transform: uppercase
+	span
+		display: block
+
+.home-prices-list-icon
+	min-width: 38px
+	margin-right: 26px
+	text-align: center
+
+.home-prices-list-text
+	margin-left: 69px
+	color: #414252
+	font-size: 13px
+	font-weight: 400
+	line-height: 20px
+	p
+		span
+			display: block
+
+.home-prices-lists-bottom
+	padding-top: 62px
+	position: relative
+	.grid-width
+		display: flex
+		justify-content: space-between
+	&:after
+		content: ""
+		position: absolute
+		width: 6px
+		top: 35px
+		left: 50%
+		bottom: 35px
+		margin-left: -1px
+		background:
+			image: url("../img/svg/dots.svg")
+	@media all and (max-width: 1024px)
+		&:after
+			display: none
+		.grid-width
+			display: block
+	@media all and (max-width: 760px)
+		padding-top: 36px
+
+.home-prices-modal-2
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 50%
+	background-color: #fff
+	padding: 63px 90px
+	opacity: 0
+	visibility: hidden
+	transition: opacity .2s
+	&:before
+		content: ""
+		position: absolute
+		width: 7px
+		height: 198px
+		top: 36px
+		right: -9px
+		background:
+			color: #fff
+			image: url("../img/svg/arrow_line.svg")
+			repeat: no-repeat
+		transform: rotateY(180deg)
+	@media all and (max-width: 1024px)
+		position: fixed
+		z-index: 1000
+		width: 100%
+		display: flex
+		flex-direction: column
+		overflow: auto
+		&:before
+			display: none
+	@media all and (max-width: 760px)
+		padding: 96px 10px 56px
+
+.home-prices-modal-closer
+	display: none
+	justify-content: center
+	align-items: center
+	position: absolute
+	top: 40px
+	right: 40px
+	color: #a70c5d
+	font-size: 11px
+	font-weight: 900
+	line-height: 11px
+	@media all and (max-width: 1024px)
+		display: flex
+
+
+.home-prices-modal-2-show
+	opacity: 1
+	visibility: visible
+
+.home-prices-modal-inner
+	margin-left: auto
+	max-width: 456px
+	@media all and (max-width: 1024px)
+		max-width: none
+		margin: auto
+
+.home-prices-modal-top
+	display: flex
+	.home-prices-modal-title
+		margin-top: 20px
+	@media all and (max-width: 760px)
+		display: block
+		.home-prices-modal-title
+			margin-top: 0
+			margin-right: 0
+			margin-bottom: 20px
+
+.home-prices-modal-bottom
+	display: flex
+	@media all and (max-width: 760px)
+		display: block
+
+.home-prices-modal-bottom-inner
+	@media all and (max-width: 760px)
+		flex-grow: 1
+
+.home-prices-modal-title
+	min-width: 44px
+	margin-right: 40px
+	font-size: 10px
+	font-weight: 900
+	line-height: 20px
+	text-transform: uppercase
+	@media all and (max-width: 760px)
+		margin-right: 0
+		margin-bottom: 20px
+
+.home-prices-modal-header
+	font-size: 15px
+	font-weight: 700
+	line-height: 20px
+	text-transform: uppercase
+	margin-bottom: 21px
+	span
+		display: block
+
+.home-prices-modal-text
+	color: #3f4147
+	font-size: 13px
+	line-height: 20px
+	p
+		margin-bottom: 20px
+
+.home-prices-modal-bottom-inner
+	flex-grow: 1
+	max-width: 350px
+
+.home-prices-modal-prices
+	display: flex
+	margin-bottom: 29px
+	li
+		width: 33.33%
+		& + li
+			padding-left: 10px
+	@media all and (max-width: 760px)
+		flex-direction: column
+		li
+			width: 100%
+			margin-bottom: 20px
+			border-bottom: 1px solid #dcdcdc
+			display: flex
+			justify-content: space-between
+			& + li
+				padding-left: 0
+
+.home-prices-modal-employee
+	margin-bottom: 17px
+	span
+		display: block
+		font-size: 11px
+		font-weight: 400
+		line-height: 14px
+	strong
+		display: block
+		font-size: 13px
+		font-weight: 700
+		line-height: 14px
+
+.home-prices-modal-price
+	span
+		font-size: 11px
+		font-weight: 400
+		line-height: 14px
+	strong
+		font-size: 18px
+		font-weight: 700
+		line-height: 14px
+		span
+			font-weight: 700

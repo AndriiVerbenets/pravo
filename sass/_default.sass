@@ -1,0 +1,95 @@
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-family: $mainFont
+	color: $fontColor
+	font-size: $fontSize
+	font-weight: $fontWeight
+	line-height: $lineHeight
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	position: relative
+	background-color: #fff
+	&.no-scroll
+		overflow: hidden
+	&.no-scroll-nav
+		overflow: hidden
+
+main
+	flex-grow: 1
+
+strong
+	font-weight: 700
+
+button
+	border: 0
+	padding: 0
+	outline: 0
+	cursor: pointer
+
+a
+	display: inline-block
+	color: $linkColor
+	text-decoration: underline
+	transition: .1s
+	&:hover
+		text-decoration: none
+	&:active
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+.input-wrapper
+	position: relative
+	margin-bottom: 21px
+	label
+		position: absolute
+		left: 0
+		bottom: 8px
+		font-size: 11px
+		font-weight: 500
+		line-height: 14px
+		text-transform: uppercase
+	&.focused,
+	&.has-value
+		label
+			display: none
+
+input
+	&[type="text"],
+	&[type="email"]
+		box-sizing: border-box
+		background-color: #fff
+		border: 0
+		outline: 0
+		width: 100%
+		border-bottom: 1px solid #dcdcdc
+		height: 27px
+		font-family: $mainFont
+		color: $fontColor
+		font-size: 14px
+		font-weight: 900
+		padding: 14px 0
+		font-size: 11px
+		line-height: 20px
+		text-transform: uppercase
+	&[type="checkbox"]
+		margin: 0
+		
+textarea
+	display: block
+	box-sizing: border-box
+	background-color: #fff
+	border: 0
+	outline: 0
+	width: 100%
+	border: 1px solid #dcdcdc
+	min-height: 251px
+	font-family: $mainFont
+	color: $fontColor
+	font-size: 14px
+	font-weight: 400
+	padding: 15px
+	resize: none

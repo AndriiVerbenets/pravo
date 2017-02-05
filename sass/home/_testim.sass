@@ -1,0 +1,134 @@
+.home-testim
+	overflow: hidden
+	border-bottom: 1px solid #f0f0f0
+	padding-bottom: 49px
+	.grid-width
+		max-width: 1114px
+	@media all and (max-width: 760px)
+		padding-bottom: 40px
+
+.home-testim-list
+	display: flex
+	margin: 0 -10px 66px
+	justify-content: space-between
+	@media all and (max-width: 1024px)
+		justify-content: space-around
+	@media all and (max-width: 760px)
+		margin-bottom: 34px
+
+.home-testim-list-item
+	width: 33.33%
+	max-width: 325px
+	padding: 0 10px
+	display: flex
+	flex-direction: column
+	a
+		text-decoration: none
+		color: $fontColor
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		&:hover
+			.home-testim-user-name
+				color: #a70c5d
+			.icon-quote,
+			.icon-youtube
+				fill: #a70c5d
+	@media all and (max-width: 1024px)
+		width: 100%
+		max-width: 380px
+	@media all and (max-width: 760px)
+		max-width: 420px
+
+@media all and (max-width: 1024px)
+	.home-testim-list-item-3
+		display: none
+
+@media all and (max-width: 760px)
+	.home-testim-list-item-2
+		display: none
+
+.home-testim-text
+	font-size: 17px
+	font-weight: 400
+	line-height: 25px
+	margin-bottom: 28px
+	flex-grow: 1
+	p
+		position: relative
+		top: -5px
+
+.home-testim-video
+	margin-bottom: 10px
+	flex-grow: 1
+	img
+		display: block
+
+.icon-quote,
+.icon-youtube
+	fill: #c9cacf
+
+.home-testim-icon
+	width: 25px
+	height: 25px
+	margin-bottom: 22px
+	display: flex
+	align-items: center
+	svg
+		display: block
+
+.home-testim-user-avatar
+	margin-bottom: 15px
+	img
+		display: block
+		width: 50px
+		height: 50px
+		object-fit: cover
+		border-radius: 50%
+
+.home-testim-user-name
+	font-size: 13px
+	font-weight: 700
+	line-height: 20px
+	margin-bottom: 9px
+
+.home-testim-user-info
+	font-size: 12px
+	line-height: 20px
+	display: flex
+	li
+		position: relative
+		& + li
+			padding-left: 18px
+			&:before
+				content: ""
+				position: absolute
+				top: 8px
+				left: 8px
+				width: 3px
+				height: 3px
+				background-color: #a70c5d
+				border-radius: 50%
+	a
+		color: #3f4147
+		font-weight: 700
+		text-decoration: underline
+		&:hover
+			color: #a70c5d
+			text-decoration: none
+
+.home-testim-more
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	color: #454545
+	font-size: 11px
+	font-weight: 900
+	line-height: 30px
+	text-transform: uppercase
+
+.home-testim-more-icon
+	margin-right: 12px
+	svg
+		display: block

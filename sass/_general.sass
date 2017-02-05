@@ -1,0 +1,124 @@
+.grid-width
+	max-width: $gridWidth
+	margin: auto
+	padding-left: 15px
+	padding-right: 15px
+	@media all and (max-width: 760px)
+		padding-left: 10px
+		padding-right: 10px
+
+// Lang switcher
+.like-switch-label
+	display: flex
+	align-items: center
+
+.like-switch
+	position: absolute
+	opacity: 0
+	&:checked + .switch-cover > .switch-circle
+		transform: translate3d(34px, 0, 0)
+	&:checked + .switch-cover > .switch-lang--ru
+		opacity: 0
+	&:checked + .switch-cover > .switch-lang--ua
+		opacity: 1
+
+.switch-cover
+	width: 68px
+	height: 34px
+	cursor: pointer
+	border-radius: 17px
+	background-color: transparent
+	transition: background-color .4s
+	padding: 6px
+	border: 2px solid #dfdfe2
+	position: relative
+
+.switch-circle
+	width: 18px
+	height: 18px
+	border-radius: 50%
+	background-color: #dfdfe2
+	transition: transform 0.4s ease
+	pointer-events: none
+	position: relative
+	z-index: 2
+
+.switch-lang
+	position: absolute
+	top: 7px
+	color: #a70c5d
+	transition: opacity .2s
+	font-size: 11px
+	font-weight: 900
+	text-transform: uppercase
+	line-height: 1.5
+	user-select: none
+
+.switch-lang--ru
+	right: 13px
+
+.switch-lang--ua
+	left: 13px
+	opacity: 0
+
+.purple-line
+	border: 0
+	width: 40px
+	height: 2px
+	background-color: #a70c5d
+	margin: 14px auto
+
+.section-header
+	padding: 54px 0 61px
+	@media all and (max-width: 760px)
+		padding: 34px 0
+
+.section-header-title
+	color: #3f4147
+	font-size: 28px
+	font-weight: 700
+	line-height: 30px
+	text-transform: uppercase
+	text-align: center
+
+.section-header-text
+	max-width: 574px
+	color: #3f4147
+	font-size: 15px
+	line-height: 20px
+	text-align: center
+	margin: auto
+	@media all and (max-width: 760px)
+		font-size: 14px
+
+.info-icon
+	width: 28px
+	height: 28px
+	border: 2px solid #a70c5d
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	.svg-info
+		fill: #3f4147
+
+// List styling
+.purple-list
+	text-align: left
+	li
+		position: relative
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		padding-left: 24px
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0
+			width: 3px
+			height: 3px
+			border: 2px solid #9f2865
+			border-radius: 50%
+		span
+			display: block

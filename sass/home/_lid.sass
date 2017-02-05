@@ -1,0 +1,79 @@
+.home-lid
+	padding: 112px 0 0
+	background:
+		color: #f5f5f5
+		repeat: no-repeat
+		size: cover
+		position: 50% 0
+	overflow: hidden
+	position: relative
+	.grid-width
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	@media all and (max-width: 760px)
+		padding-top: 100px
+
+.home-lid-info
+	margin-top: 64px
+	margin-right: 45px
+	max-width: 434px
+	margin-bottom: 20px
+	.entry-header
+		color: #454545
+		font-size: 30px
+		font-weight: 700
+		line-height: 35px
+		text-transform: none
+		max-width: 306px
+	.purple-line
+		margin: 28px 0 26px
+	@media all and (max-width: 1024px)
+		max-width: 312px
+	@media all and (max-width: 760px)
+		max-width: none
+		margin-top: 0
+		margin-right: 0
+		margin-bottom: 50px
+	.entry-header
+		font-size: 28px
+
+.home-lid-text
+	margin-bottom: 54px
+	p
+		color: #454545
+		& + p
+			margin-top: 24px
+	@media all and (max-width: 760px)
+		margin-bottom: 40px
+
+.home-lid-play
+	width: 90px
+	height: 90px
+	background-color: #fff
+	border-radius: 50%
+	position: absolute
+	top: 50%
+	left: 48.2%
+	transform: translate(-50%, -50%)
+	.icon-play
+		position: relative
+		top: 50%
+		left: 52%
+		transform: translate(-50%, -50%)
+	@media all and (max-width: 760px)
+		display: none
+// img
+.home-lid-img
+	margin-right: 63px
+	margin-left: 45px
+	align-self: flex-end
+	img
+		display: block
+	@media all and (max-width: 1024px)
+		margin-right: -62px
+	@media all and (max-width: 760px)
+		margin-right: -162px
+		margin-left: 10px
+	@media all and (max-width: 480px)
+		display: none
